@@ -12,8 +12,8 @@ import com.monovore.decline.Opts
 import com.monovore.decline.effect.CommandIOApp
 
 val args = (
-  Opts.env[Int]("INPUT_NUMBER_ONE", "The first number"),
-  Opts.env[Int]("INPUT_NUMBER_TWO", "The second number"),
+  Opts.env[Int]("INPUT_NUMBER-ONE", "The first number"),
+  Opts.env[Int]("INPUT_NUMBER-TWO", "The second number"),
   Opts.env[String]("GITHUB_OUTPUT", "The file of the output").map(Path.apply)
 )
 
